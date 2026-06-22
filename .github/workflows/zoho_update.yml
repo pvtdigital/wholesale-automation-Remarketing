@@ -2,7 +2,7 @@ name: Update Zoho CRM Leads - Wholesale
 
 on:
   workflow_dispatch:
-  # schedule removed - Zoho Flow handles scheduling now
+  # schedule removed - Zoho Flow handles scheduling
 
 permissions:
   actions: read
