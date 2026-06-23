@@ -917,8 +917,8 @@ def main():
     token = get_access_token()
     total_updated = update_leads(token, todays_leads)
 
-    print(f"
-✅ Done! Updated {total_updated} leads today")
+    print("\n" + "Done! Updated " + str(total_updated) + " leads today")
+
     print(f"📊 Progress: leads {start_idx + 1}-{end_idx} out of 8000 scheduled | Remaining scheduled: {8000 - end_idx}")
 
     if len(todays_leads) > 0 and total_updated == 0:
