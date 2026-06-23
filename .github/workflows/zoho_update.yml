@@ -5,7 +5,7 @@ on:
   # schedule removed - Zoho Flow handles scheduling
 
 permissions:
-  actions: read
+  actions: write
   contents: read
 
 jobs:
