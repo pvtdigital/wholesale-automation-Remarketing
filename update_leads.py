@@ -25,9 +25,9 @@ ALL_LEAD_IDS = ["zcrm_530975000003086006", "zcrm_530975000003146844", "zcrm_5309
 # Triggered by Zoho Flow via workflow_dispatch
 # Remaining 2257 leads (6000-8257) are PENDING - no date assigned yet
 SCHEDULE = [
-    ("2026-07-01", 0,    2000),  # 01 July - 2,000 leads
-    ("2026-07-02", 2000, 4000),  # 02 July - 2,000 leads
-    ("2026-07-03", 4000, 6000),  # 03 July - 2,000 leads
+    ("2026-07-02", 0,    2000),  # 02 July - 2,000 leads
+    ("2026-07-03", 2000, 4000),  # 03 July - 2,000 leads
+    ("2026-07-04", 4000, 6000),  # 04 July - 2,000 leads
     # 2257 leads remaining (index 6000-8257) - PENDING, date TBD
 ]
 
