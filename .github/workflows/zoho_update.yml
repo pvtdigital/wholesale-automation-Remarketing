@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   # No cron schedule - Zoho Flow handles scheduling via workflow_dispatch trigger
 permissions:
-  actions: write
+  actions: read
   contents: read
 jobs:
   update-leads:
@@ -22,4 +22,5 @@ jobs:
           ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
           ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
           ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python update_leads.py
